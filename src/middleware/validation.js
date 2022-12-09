@@ -14,7 +14,7 @@ export const validation = (Schema) => {
             }
         })
         if (validationArr.length) {
-            res.status(400).json({ message: "Validation error", validationArr })
+            return res.status(400).json({ message: "Validation error", validationArr })
         } else {
             next()
         }

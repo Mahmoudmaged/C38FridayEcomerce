@@ -9,8 +9,7 @@ import { appRouter } from './src/modules/index.router.js'
 
 const app = express()
 // setup port and the baseUrl
-const port = process.env.PORT || 3000
-
+const port = process.env.PORT 
 //routing
 appRouter(app)
 
