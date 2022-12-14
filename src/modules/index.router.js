@@ -43,7 +43,7 @@ export const appRouter = (app) => {
     app.use(`${baseUrl}/order`, orderRouter)
     app.use(`${baseUrl}/brand`, branRouter)
     app.use('*', (req, res, next) => {
-        res.send("In-valid Routing Plz check url  or  method")
+        res.send({message:"In-valid Routing Plz check url  or  method"})
     })
     //handel error
     app.use(globalErrorHandling)

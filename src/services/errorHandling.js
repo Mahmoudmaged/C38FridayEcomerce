@@ -22,7 +22,7 @@ export const globalErrorHandling = (err, req, res, next) => {
         }
     } else {
         if (err) {
-            res.status(err['cause']).json({ message: "error", err: err.message })
+            res.status(err['cause']).json({ message: "error", err: err.message ,   stack: err.stack })
         }
     }
 
