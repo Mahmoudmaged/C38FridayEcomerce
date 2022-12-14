@@ -16,8 +16,7 @@ import cors from 'cors'
 
 export const appRouter = (app) => {
     //BaseUrl
-    const baseUrl = process.env.BASEURL ||
-
+    const baseUrl = process.env.BASEURL 
         //convert Buffer Data
         app.use(express.json())
     app.use(express.urlencoded({ extended: false }))
