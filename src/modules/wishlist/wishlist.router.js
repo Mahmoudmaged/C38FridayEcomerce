@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { auth } from "../../middleware/auth.js";
-import { endPoint } from "./wishlist.endPoint.js";
+import { endPoint } from "./wishlist.endpoint.js";
 import * as wishlist from './controller/wishlist.js'
 const router = Router({ mergeParams: true })
 
